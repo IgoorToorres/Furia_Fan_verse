@@ -1,0 +1,96 @@
+{
+    "news": [
+        {
+            "id": "1",
+            "imageUrl": "https://static.draft5.gg/news/2024/03/17192352/FURIA-arT-PGL-Major-Copenhagen-2024.jpg",
+            "titleNews": "Conflitos de interesse no Major de Austin incluem arT e FURIA entenda",
+            "description": "A BLAST apresentou, na tarde da última quarta-feira (23), as declarações de conflitos de interesse relativas aos jogadores e clubes que disputarão o Major de Austin. A revelação foi feita por meio da publicação de um documento oficial no site da empresa.\n\nDentre os sete atletas listados, está o brasileiro Andrei \"arT\" Piovezan, atualmente capitão do Fluxo. O jogador possui uma pequena fatia das \"ações\" da FURIA, equivalente a menos de 1% do clube. Essa participação foi adquirida ao longo dos anos em que defendeu a organização.\n\nNo documento assinado por Jaime Pádua, CEO da FURIA, fica claro que os resultados desportivos da equipe não influenciam os ganhos de arT com essa fatia acionária.\n\nAlém disso, outros três casos de conflito já eram amplamente conhecidos, como o de Jonathan \"EliGE\" Jablonowski, atualmente jogador da FaZe Clan. EliGE detém 0,043% das ações da Team Liquid, clube que representou entre 2015 e 2023.",
+            "game": "cs"
+        },
+        {
+            "id": "2",
+            "imageUrl": "https://lncimg.lance.com.br/cdn-cgi/image/width=950,quality=75,fit=pad,format=webp/uploads/2025/04/G3X-e-Furia-se-enfrentaram-pela-5a-rodada-da-Kings-League-Brasil-aspect-ratio-512-320.png",
+            "titleNews": "Presidente relata confusão com time de Neymar após jogo na Kings League",
+            "description": "Longe das câmeras de transmissão, os elencos da G3X e da Furia se envolveram em uma confusão na noite de segunda-feira (21) nos vestiários da Arena Oreo, ginásio que tem recebido os jogos da Kings League Brasil em Guarulhos, São Paulo. A treta entre os dois elencos teria acontecido após o apito final da partida entre os times, que terminou com vitória da equipe comandada por Neymar por 9 a 7. O caso foi contado pelo próprio presidente da outra equipe, Gaulês.",
+            "game": "kings league"
+        },
+        {
+            "id": "3",
+            "imageUrl": "https://img-cdn.hltv.org/gallerypicture/V-wuU8kZq5vrIFsIa_XS7r.jpg?ixlib=java-2.1.0&w=1200&s=5c75b1baeb907425c459b72bc93fe171",
+            "titleNews": "FalleN aponta principal motivo para derrota da FURIA",
+            "description": "Capitão falou das dificuldades recentes da equipe após eliminação na BLAST Open Lisbon.\n\nGabriel \"FalleN\" Toledo conversou com a mesa de transmissão da BLAST depois da FURIA ser eliminada da BLAST Open Lisbon neste sábado. Os brasileiros começaram na frente, tiveram vantagens no mapa, porém sofreram a virada para a M80 e caíram no torneio.\n\nNa conversa, o capitão apontou qual foi o grande problema da FURIA que levou a equipe à derrota na série eliminatória.\n\n\"Eu diria que a série foi perdida dos dois lados CTs. Não fomos capazes de administrar a pressão e, na minha opinião, administrar os usos de utilitárias. Sinto que tem muito pânico em algumas situações. É preciso entender que você está jogando um campeonato, as pessoas não vão sair andando pro meio direto, não vão jogar de primeira, então você precisa administrar suas utilitárias.\"\n\n\"Nesse sentido nós não evoluímos o quanto precisamos para vencer partidas como estas. Preciso rever o jogo mas sinto que precisamos de mais cautela em como jogaremos o CT porque estamos jogando por coisas que (os adversários) não estão fazendo muito e isso custa jogos\", seguiu.",
+            "game": "cs"
+
+        },
+        {
+            "id": "4",
+            "imageUrl": "https://img-cdn.hltv.org/gallerypicture/pRUjSiMEpV5L8XjjqZ0MJ7.jpg?ixlib=java-2.1.0&w=1200&s=34d2e8464380ab8e219b005216a97ae7",
+            "titleNews": "molodoy comenta reação com proposta da FURIA e aulas de inglês",
+            "description": "Awper do Cazaquistão admitiu surpresa com interesse dos brasileiros.\n\nJogador da AMKAL entre janeiro e abril deste ano, Danil molodoy Golubenko deixou o time rumo à organização brasileira. Nesta quarta-feira, o time da Comunidade dos Estados Independentes (CEI) publicou um vídeo com o awper do Cazaquistão.\n\nNo vídeo, em russo, um dos assuntos abordados por molodoy foi sua reação ao interesse da FURIA. O jogador de 20 anos admitiu a surpresa com a proposta de se juntar ao clube brasileiro.\n\n\"Eu não tinha noção que isso era real. Oito meses atrás eu estava sentado em um clube de computador com minha família e agora fui convidado para um time do tier 1. Você não compreende que isso é real, que tantas pessoas famosas estão escrevendo para você. Você entende isso quando te perguntam você quer ir para a FURIA?\"\n\nÉ nesse momento que você entende que as pessoas estão interessadas em você e não é um conto de fadas. Não teve nenhum teste, eles somente fizeram a transferência de repente e foi isso, seguiu molodoy.",
+            "game": "cs"
+        },
+        {
+            "id": "5",
+            "imageUrl": "https://static.draft5.gg/news/2025/04/07124319/chelo-furia-pgl-bucharest-2025.jpg",
+            "titleNews": "FURIA coloca chelo no banco",
+            "description": "Contratado pela organização em julho de 2023 juntamente de Gabriel \"FalleN\" Toledo, o experiente jogador disputou 309 mapas com a camisa furiosa, acumulando 1.00 de rating e 1.06 de impacto, conforme dados da HLTV.org.\n\nNeste período, chelo foi mais notavelmente campeão da Elisa Masters Espoo 2023, além de semifinalista da IEM Rio 2024. O começo de 2025 em marcha lenta por parte da FURIA, todavia, culmina agora com a ida do atleta para a reserva.\n\nMesmo após encerrar 2024 com uma respeitável campanha no Major de Xangai, a equipe liderada por FalleN falhou em chegar aos playoffs de todas as competições que disputou nesta temporada, com a gota d'água sendo a PGL Bucharest 2025.",
+            "game": "cs"
+        },
+        {
+            "id": "6",
+            "imageUrl": "https://cdn-62cb22a2c1ac1835ecef9f37.closte.com/wp-content/uploads/2025/03/furia-valorant-vct-americas-stage-1-scaled.jpg",
+            "titleNews": "FURIA VALORANT: Panteras estreiam no VCT Americas com dificuldade",
+            "description": "A estreia da FURIA VALORANT no VCT Americas Stage 1 (VALORANT Champions Tour) aconteceu na noite deste sábado (22). A adversária da vez foi a G2 Esports (G2), com a qual disputaram uma MD3 (Melhor de três) válida pela fase de grupos.\n\nApós a eliminação rápida no VCT Kickoff, as panteras retornam a performar no campeonato regional. Desta vez, com a equipe completa e oficial desde o game 1, diferente do que aconteceu anteriormente, no torneio passado.\n\nA série começou no mapa de escolha da equipe norte-americana, a Lotus. A FURIA (FUR) saiu na frente, e a primeira metade acabou em 9-3 para os brasileiros. Entretanto, a G2 virou e venceu por 13-10.\n\nA segunda partida foi em Ascent, estreia do mapa na competição. O primeiro half ficou a favor de Alexander \"jawgemo\" Mor e os companheiros. Porém, Luis \"pryze\" Henrique e Khalil \"khalil\" Schmidt fizeram uma jogada impressionante que trouxe um ponto importante para as panteras. No fim, quem levou a melhor foi a G2 Esports por 13-7.",
+            "game": "valorant"
+        },
+        {
+            "id": "7",
+            "imageUrl": "https://cdn-62cb22a2c1ac1835ecef9f37.closte.com/wp-content/uploads/2025/02/valorant-pro-settings-mwzera.jpg",
+            "titleNews": "VALORANT: FURIA anuncia reviravolta inesperada no elenco",
+            "description": "A FURIA fez um anúncio que pegou todos de surpresa nesta terça-feira (11). A organização revelou que colocou o atleta de VALORANT Leonardo \"Mwzera\" Serrati no banco da modalidade.\n\nA mudança foi a pedido do atleta por questões de saúde. O time ainda informou que o jogador se afastará temporariamente do elenco principal e estará no banco de reservas. Mwzera está nos panteras desde o início de 2023, quando disputou o VCT LOCK//IN: São Paulo na estreia contra a FNATIC, time europeu. Desde então, ao lado de Khalil \"khalil\" Schmidt, é o jogador mais antigo na lineup.\n\nNo entanto, a FURIA ainda não divulgou quem será o substituto e se já estão fechados com o novo atleta. Lembrando que o VCT 2025: Americas Stage 1, campeonato que dá vagas ao Master Toronto, começa em 21 de março.",
+            "game": "valorant"
+        },
+        {
+            "id": "8",
+            "imageUrl": "https://cdn-62cb22a2c1ac1835ecef9f37.closte.com/wp-content/uploads/2024/10/imagem_2024-10-17_234208053.png",
+            "titleNews": "VALORANT: FURIA realiza mudanças no elenco",
+            "description": "Ao que tudo indica, a FURIA promoverá reformulação no elenco de VALORANT. Nesta quinta-feira (17), a organização brasileira de esportes eletrônicos anunciou as saídas do jogador Alexandre \"xand\" Zizi e do treinador Pedro \"koy\" Pulig.\n\nSegundo informações veiculadas na imprensa nacional, a mudança surge por conta de uma reestruturação que será realizada no plantel dos panteras. Ainda neste ponto, quem está comandando a reorganização é o manager Lucas \"lukzera\" Soares.\n\nXand chegou à FURIA em maio deste ano, acumulando uma passagem sem grandes feitos e encerrada de forma breve. O jogador brasileiro já foi considerado por muitos um dos melhores duelistas do país, mas há algum tempo não consegue mais mostrar o mesmo nível.",
+            "game": "valorant"
+        },
+        {
+            "id": "9",
+            "imageUrl": "https://sm.ign.com/t/ign_br/screenshot/default/image-2025-01-16-190319792_xarj.960.jpg",
+            "titleNews": "Com Guigo, FURIA confirma time de LoL para primeiro ano da LTA, antigo CBLOL",
+            "description": "O time de esportes eletrônicos FURIA revelou em evento presencial nesta quinta-feira (16) que os jogadores contratados para seu time de League of Legends em 2025 são Andrey \"Ayu\", Guilherme \"Guigo\" — que estava na RED Canids Kalunga —, Gabriel \"Jojo\", Pedro \"Tatu\" e Arthur \"Tutsz\", além dos técnicos Thomas \"Thinkcard\" e Erick \"furyz\".\n\nEm janeiro de 2024, Lucas \"Maestro\", hoje diretor geral da modalidade na FURIA, disse ao IGN Brasil que os anos tentando levar a equipe ao topo do campeonato desde 2021 foram \"frustrantes\". Hoje, ele opina que as movimentações são positivas porque \"voltaram para a comunicação em português\" e \"as duas peças novas\" (referindo-se a Guigo e Tatu) trazem \"experiência e liderança\".",
+            "game": "lol"
+        },
+        {
+            "id": "10",
+            "imageUrl": "https://cdn-62cb22a2c1ac1835ecef9f37.closte.com/wp-content/uploads/2025/04/54432567183_8af08c53c4_o-scaled.jpg",
+            "titleNews": "LTA Sul: “Eles precisam de mais experiência no palco”, comenta Thinkcard, técnico da FURIA",
+            "description": "A lineup da FURIA League of Legends (LoL) é conhecida pela força e como jogam os treinos, sendo um time considerado forte e que tem muito a demonstrar ainda no stage da LTA Sul. A comissão técnica dos panteras falou um pouco sobre isso na coletiva de imprensa.\n\nA comissão técnica composta por Erick \"Furyz\" Susin e Thomas \"Thinkcard\" Slotkin compareceu à coletiva de imprensa após a derrota para a Leviatán no primeiro dia da LTA Sul.\n\nA Redação da Pichau Arena questionou o head coach, Thinkcard, sobre o que falta para os panteras dos treinos aparecerem no stage.",
+            "game": "lol"
+        },
+        {
+            "id": "11",
+            "imageUrl": "https://medias.itatiaia.com.br/dims4/default/ea4692b/2147483647/strip/true/crop/661x372+0+0/resize/1000x563!/format/webp/quality/90/?url=https%3A%2F%2Fk2-prod-radio-itatiaia.s3.us-east-1.amazonaws.com%2Fbrightspot%2Fc5%2F37%2F7f1b447c410e80dcd71a6f188820%2Fcaptura-de-tela-2025-04-21-222834.png",
+            "titleNews": "FURIA vence G3X em grande clássico da Kings League Brazil; veja resultados da rodada",
+            "description": "Foi realizada, na noite desta segunda-feira (21), no Banijay Studios, em Guarulhos-SP, a quinta rodada da Kings League Brazil. Ao todo, foram mais cinco jogos da competição. O grande destaque da noite foi a vitória da FURIA FC sobre o G3X FC, por 9 a 7, no fantástico duelo de equipes com 100% de aproveitamento.",
+            "game": "kings league"
+        },
+        {
+            "id": "12",
+            "imageUrl": "https://s2-ge.glbimg.com/8MZA2X1iCpMWW0D6_Or4JnJKMwo=/0x0:2048x1365/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2025/E/E/9BACJ4S22ewtylsy8RKQ/54328040933-14470555e4-k.jpg",
+            "titleNews": "FURIA perde, e Six Invitational 2025 não pode mais ter final brasileira",
+            "description": "Uma expectativa quando se trata de competição de Rainbow Six: Siege é a possibilidade de duas equipes brasileiras disputarem a grande final. É algo que se tornou comum, mas que não acontecerá no Six Invitational 2025, o campeonato mundial da modalidade, realizado em Boston, nos Estados Unidos. Nos jogos de playoffs disputados nesta sexta-feira (14), a FaZe Clan se manteve viva na chave inferior, depois da eliminação da Razah Company, mas a FURIA perdeu a final da chave superior, o que enterrou as chances de uma disputa de título entre dois times do Brasil.\n\nÉ que, com a vitória sobre a FURIA, a francesa BDS se garantiu na decisão. Já a FURIA, ao cair para a parte de baixo da tabela dos playoffs, ficou no caminho da FaZe, que, com o triunfo sobre a norte-americana Spacestation Gaming (SSG), avançou para enfrentar a também norte-americana Unwanted.\n\nNa melhor das hipóteses para a torcida brasileira, FURIA e FaZe terão de se enfrentar, neste sábado (15), pela segunda vaga na decisão, marcada para o domingo (16). O título mundial valerá o prêmio de US$ 1 milhão (equivalentes a cerca de R$ 5,7 milhões na cotação atual).",
+            "game": "r6"
+        },
+        {
+            "id": "13",
+            "imageUrl": "https://cdn-62cb22a2c1ac1835ecef9f37.closte.com/wp-content/uploads/2025/01/Snapinsta.app_432588816_956234405606789_6448206324243222265_n_1080.jpg",
+            "titleNews": "Tricampeão mundial dá dicas para jogar o Rainbow Six Siege",
+            "description": "A Pichau Arena conversou com exclusividade com Gustavo \"HerdsZ\" Herdina, e a equipe da Redação pediu algumas dicas para quem deseja começar a jogar Rainbow Six Siege (R6) e se tornar profissional algum dia.\n\nHerdina é tricampeão mundial consecutivo de R6, um feito inédito e difícil de ser superado. Com tanta experiência e autoridade no jogo da Ubisoft, ele é a pessoa ideal para ajudar quem quer ingressar nesse mundo.",
+            "game": "r6"
+        }
+    ]
+}
