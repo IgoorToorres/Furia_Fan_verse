@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_polls/flutter_polls.dart';
-import 'package:fuira_fan_verse/core/widgets/app_colors.dart';
+import 'package:fuira_fan_verse/shared/app_colors.dart';
 
 class PollWidget extends StatefulWidget {
   const PollWidget({super.key});
@@ -19,7 +19,7 @@ class _PollWidgetState extends State<PollWidget> {
       padding: const EdgeInsets.all(16.0),
       child: FlutterPolls(
         votesTextStyle: TextStyle(
-          color: AppColors.textCardColor,
+          color: AppColors.textColor,
           fontSize: 14,
           fontWeight: FontWeight.w500,
         ),
@@ -38,11 +38,12 @@ class _PollWidgetState extends State<PollWidget> {
           style: TextStyle(
             fontSize: 18,
             fontWeight: FontWeight.bold,
-            color: Colors.white, 
+            color: AppColors.textColor, 
           ),
         ),
         votedProgressColor: Colors.green, 
-        votedBackgroundColor: Colors.grey.shade700, 
+        // votedBackgroundColor: Colors.grey.shade700, 
+        votedBackgroundColor: AppColors.cardColor, 
         votedPercentageTextStyle: const TextStyle(
           color: Colors.white,
           fontSize: 12,
@@ -89,8 +90,8 @@ class _PollWidgetState extends State<PollWidget> {
             votes: 34,
           ),
         ],
-        pollOptionsFillColor: AppColors.lightBackgroundColor,
-        pollOptionsBorder: Border.all(color: AppColors.whiteBackgroundColor),
+        pollOptionsFillColor: AppColors.cardColor,
+        pollOptionsBorder: Border.all(color: AppColors.backgroundLight),
       ),
     );
   }

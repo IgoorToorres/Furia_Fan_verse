@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fuira_fan_verse/core/widgets/app_colors.dart';
+import 'package:fuira_fan_verse/shared/app_colors.dart';
 
 class AppbarDefault extends StatelessWidget implements PreferredSizeWidget {
   const AppbarDefault({super.key});
@@ -8,7 +8,7 @@ class AppbarDefault extends StatelessWidget implements PreferredSizeWidget {
   Widget build(BuildContext context) {
     return AppBar(
       title: Image.asset('assets/logo-furia.png'),
-      backgroundColor: AppColors.whiteBackgroundColor,
+      backgroundColor: AppColors.brackgroundColor,
       centerTitle: true,
     );
   }

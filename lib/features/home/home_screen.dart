@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:fuira_fan_verse/core/widgets/app_colors.dart';
-import 'package:fuira_fan_verse/core/widgets/appbar_default.dart';
+import 'package:fuira_fan_verse/shared/app_colors.dart';
+import 'package:fuira_fan_verse/shared/widgets/appbar_default.dart';
 import 'package:fuira_fan_verse/data/news_data.dart';
 import 'package:fuira_fan_verse/features/home/widgets/news_card.dart';
 import 'package:fuira_fan_verse/features/home/widgets/partner_card.dart';
@@ -18,7 +18,7 @@ class HomeScreen extends StatelessWidget {
     final List<String> partnersImages = Partners().getImages();
     return Center(
       child: Scaffold(
-        backgroundColor: AppColors.brackgroundColor,
+        backgroundColor: AppColors.backgroundLight,
         drawer: CustomDrawer(),
         appBar: AppbarDefault(),
         body: FutureBuilder(
@@ -34,6 +34,29 @@ class HomeScreen extends StatelessWidget {
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
                     PollWidget(),
+                    Padding(
+                      padding: const EdgeInsets.symmetric(vertical: 10),
+                      child: Column(
+                        children: [
+                          Text(
+                            'Tire suas duvidas\ncom o mascote da Furia!',
+                            style: TextStyle(
+                              color: AppColors.textColor,
+                              fontSize: 18,
+                              fontWeight: FontWeight.bold,
+                            ),
+                            textAlign: TextAlign.center,
+                          ),
+                          ClipRRect(
+                            borderRadius: BorderRadius.circular(50),
+                            child: Image.asset(
+                              'assets/furia-fc.png',
+                              height: 100,
+                            ),
+                          ),
+                        ],
+                      ),
+                    ),
                     SizedBox(
                       width: double.infinity,
                       child: Padding(
@@ -41,7 +64,7 @@ class HomeScreen extends StatelessWidget {
                         child: Text(
                           'Parceiros',
                           style: TextStyle(
-                            color: Colors.white,
+                            color: AppColors.textColor,
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                           ),
@@ -66,7 +89,7 @@ class HomeScreen extends StatelessWidget {
                         child: Text(
                           'Noticias',
                           style: TextStyle(
-                            color: Colors.white,
+                            color: AppColors.textColor,
                             fontSize: 20,
                             fontWeight: FontWeight.bold,
                           ),

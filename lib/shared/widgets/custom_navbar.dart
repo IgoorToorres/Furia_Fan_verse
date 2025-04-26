@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fuira_fan_verse/shared/app_colors.dart';
 
 class CustomNavbar extends StatelessWidget {
   final int currentIndex;
@@ -15,7 +16,8 @@ class CustomNavbar extends StatelessWidget {
     return BottomNavigationBar(
       currentIndex: currentIndex,
       onTap: onTap,
-      selectedItemColor: Colors.deepPurple,
+      backgroundColor: AppColors.brackgroundColor,
+      selectedItemColor: AppColors.cardColor,
       unselectedItemColor: Colors.grey,
       type: BottomNavigationBarType.fixed,
       items: const [

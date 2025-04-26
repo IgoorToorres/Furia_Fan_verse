@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:fuira_fan_verse/core/widgets/app_colors.dart';
+import 'package:fuira_fan_verse/shared/app_colors.dart';
 import 'package:fuira_fan_verse/data/news_data.dart';
 import 'package:fuira_fan_verse/features/home/home_navigation.dart';
 import 'package:provider/provider.dart';
