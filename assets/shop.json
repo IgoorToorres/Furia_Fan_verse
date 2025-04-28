@@ -1,0 +1,140 @@
+{
+    "shop": [
+        {
+            "id": "1",
+            "imageUrl": "https://furiagg.fbitsstatic.net/img/p/camiseta-oficial-furia-adidas-preta-150265/337491-1.jpg?w=1280&h=1280&v=202503281009",
+            "title": "Camiseta Oficial Furia | Adidas Preta",
+            "value": 80000,
+            "description": "A nova camisa Jersey FURIA x Adidas chega representando o DNA da equipe dentro e fora do jogo. Desenvolvida com tecnologia Dry Fit, essa jersey Adidas X FURIA garante respirabilidade e rápida absorção do suor, mantendo o conforto em qualquer situação, seja dentro do jogo ou nas ruas. Seu caimento regular e a gola V em ribana proporcionam um ajuste impecável, enquanto o pattern em embossing na parte frontal destaca a pantera da FURIA em alto-relevo. Os logos FURIA e Adidas aplicados em transfer com relevo e as lendárias três listras, localizadas nos ombros, reforçam a fusão entre o universo do e-sports e do streetwear. Feita em 100% poliéster, essa camisa Dry Fit é o uniforme FURIA oficial de 2025, pensada para quem vive o game com intensidade e carrega a FURIA no peito. Garanta a sua e entre no time!",
+            "type": "blusa"
+        },
+        {
+            "id": "2",
+            "imageUrl": "https://furiagg.fbitsstatic.net/img/p/camiseta-furia-oficial-24-preta-150177/336897-7.jpg?w=1280&h=1280&v=202502121640",
+            "title": "Camiseta Furia Oficial '24 Preta",
+            "value": 75000,
+            "description": "Este design exclusivo é uma colaboração dos renomados artistas Jesus Credo e Izzy Credo, conhecidos como os 'Irmãos Credo', mestres da arte em grafite. Inspirado em elementos da cultura africana, o uniforme é uma verdadeira celebração das raízes culturais, integrando arte e significado em cada detalhe. Lançado pela FURIA, o 'Future is Black' vai além do estilo — é uma poderosa declaração antirracista que reforça o compromisso da FURIA como movimento sociocultural. Vista o futuro, celebre a diversidade e faça parte dessa mensagem de resistência e igualdade. Camiseta em tecido jersey com tecnologia dry fit, desenvolvida com fios de microfibra para proporcionar melhor evaporação e rápida absorção do suor, garantindo um conforto excepcional. Caimento regular ao corpo, gola careca, mangas e barra retas, pattern sublimado e aplicação da pantera em transfer 3D. 100% poliéster.",
+            "type": "blusa"
+        },
+        {
+            "id": "3",
+            "imageUrl": "https://furiagg.fbitsstatic.net/img/p/camiseta-furia-x-champion-college-off-white-150165/336813-1.jpg?w=1280&h=1280&v=no-value",
+            "title": "Camiseta Furia x Champion College Off White",
+            "value": 110000,
+            "description": "Produto exclusivo da coleção colaborativa entre a Champion e a entidade de e-sports brasileira FURIA, apresentando o icônico arco da Champion em conjunto com uma interpretação da Pantera da FURIA. Camiseta de manga curta de tecido leve, construída em mistura de algodão macio 150GMS. Construída na icônica modelagem da Champion, inspirada nas camisetas dos anos 1980 e 1990. Tradicional C-Logo da Champion aplicado na manga esquerda. Cor: Off White. Produzido no Brasil.",
+            "type": "blusa"
+        },
+        {
+            "id": "4",
+            "imageUrl": "https://furiagg.fbitsstatic.net/img/p/camiseta-oversized-furia-x-zor-verde-estonada-150242/337333-1.jpg?w=1280&h=1280&v=no-value",
+            "title": "Camiseta Oversized Furia x Zor Verde Estonada",
+            "value": 75000,
+            "description": "",
+            "type": "blusa"
+        },
+        {
+            "id": "5",
+            "imageUrl": "https://furiagg.fbitsstatic.net/img/p/jaqueta-my-hero-academia-x-furia-izuku-midorya-verde-150231/337262-1.jpg?w=1280&h=1280&v=no-value",
+            "title": "Jaqueta My Hero Academia x Furia Izuku Midorya Verde",
+            "value": 160000,
+            "description": "Jaqueta anorak em tecido tactel. Fechamento por zíper. Dois bolsos laterais. Barra com ajuste por elástico e regulador. Estampas em silk screen. 100% Poliamida.",
+            "type": "casaco"
+        },
+        {
+            "id": "6",
+            "imageUrl": "https://furiagg.fbitsstatic.net/img/p/jaqueta-college-my-hero-academia-x-furia-azul-150230/337255-1.jpg?w=1280&h=1280&v=no-value",
+            "title": "Jaqueta College My Hero Academia x Furia Azul",
+            "value": 200000,
+            "description": "Jaqueta varsity em moletom sem felpa e forro em matelassê. Patches bordados na parte frontal. Gola, punhos e barra em ribana canelada. Fechamento por botões de pressão. Bolsos laterais. Estampas em silk screen nas mangas. Forro acolchoado. Corpo: 48% Algodão, 47% Poliéster, 5% Elastano. Forro: 97% Poliéster, 3% Elastano.",
+            "type": "casaco"
+        },
+        {
+            "id": "7",
+            "imageUrl": "https://furiagg.fbitsstatic.net/img/p/jaqueta-furia-x-zor-preta-150245/337354-1.jpg?w=1280&h=1280&v=no-value",
+            "title": "Jaqueta Furia x Zor Preta",
+            "value": 170000,
+            "description": "Jaqueta em sarja nas cores preta e cinza chumbo. Fechamento frontal por zíper. Bolsos laterais. Bolsos internos. Patch aplicado no lado esquerdo. Detalhes bordados com cor contrastante. 100% Algodão.",
+            "type": "casaco"
+        },
+        {
+            "id": "8",
+            "imageUrl": "https://furiagg.fbitsstatic.net/img/p/moletom-oversized-furia-harder-to-kill-preto-150164/336806-1.jpg?w=1280&h=1280&v=no-value",
+            "title": "Moletom Oversized Furia Harder To Kill Preto",
+            "value": 140000,
+            "description": "Moletom felpado com bolso canguru e capuz. Modelagem Oversized. Ombros caídos. Barra e punhos em ribana. Bolso canguru. Estampa frontal e nas mangas.",
+            "type": "casaco"
+        },
+        {
+            "id": "9",
+            "imageUrl": "https://furiagg.fbitsstatic.net/img/p/moletom-careca-furia-future-is-black-preto-150151/336715-1.jpg?w=1280&h=1280&v=no-value",
+            "title": "Moletom Careca Furia Future is Black Preto",
+            "value": 190000,
+            "description": "Este design exclusivo é uma colaboração dos renomados artistas Jesus Credo e Izzy Credo, conhecidos como os 'Irmãos Credo', mestres da arte em grafite. Inspirado em elementos da cultura africana, o uniforme é uma verdadeira celebração das raízes culturais, integrando arte e significado em cada detalhe. Lançado pela FURIA, o 'Future is Black' vai além do estilo — é uma poderosa declaração antirracista que reforça o compromisso da FURIA como movimento sociocultural. Vista o futuro, celebre a diversidade e faça parte dessa mensagem de resistência e igualdade. Moletom careca sem felpa. Gola, barra e punhos em ribana. Estampa frontal. Etiqueta emborrachada costurada próxima à barra. 100% Algodão.",
+            "type": "casaco"
+        },
+        {
+            "id": "10",
+            "imageUrl": "https://row.hyperx.com/cdn/shop/products/hyperx_fury_ultra_1_straight_900x.jpg?v=1662421259",
+            "title": "HyperX FURY Ultra - Mouse pad gamer RGB - Superfície rígida",
+            "value": 180000,
+            "description": "Mouse pad brilhante HyperX FURY Ultra RGB com iluminação 360° e efeitos personalizáveis via software HyperX NGENUITY. Superfície rígida com microtextura de baixa fricção. Base antideslizante para estabilidade.",
+            "type": "periferico"
+        },
+        {
+            "id": "11",
+            "imageUrl": "https://images6.kabum.com.br/produtos/fotos/98696/mouse-gamer-hyperx-pulsefire-core-hx-mc004b_mouse-gamer-hyperx-pulsefire-core-hx-mc004b_1539172781_g.jpg",
+            "title": "Mouse Gamer HyperX Pulsefire Core RGB 6200 DPI",
+            "value": 300000,
+            "description": "Sensor Pixart 3327 com precisão extrema e até 6200 DPI. Sete botões programáveis com feedback tátil para até 20 milhões de cliques. Iluminação RGB com 4 níveis de luminosidade e personalização via HyperX NGENUITY.",
+            "type": "periferico"
+        },
+        {
+            "id": "12",
+            "imageUrl": "https://images5.kabum.com.br/produtos/fotos/467535/headset-gamer-hyperx-cloud-iii-dts-drivers-53mm-usb-pc-ps5-ps4-xbox-series-xis-xbox-one-nintendo-switch-mobile-preto-727aa9aa_1692025823_g.jpg",
+            "title": "Headset Gamer HyperX Cloud III",
+            "value": 500000,
+            "description": "Conforto premium com espuma viscoelástica exclusiva e couro sintético de alta qualidade. Áudio imersivo com drivers de 53 mm e som 7.1 surround. Microfone removível com cancelamento de ruído para comunicação clara.",
+            "type": "periferico"
+        },
+        {
+            "id": "13",
+            "imageUrl": "https://images0.kabum.com.br/produtos/fotos/150980/teclado-mecanico-gamer-hyperx-alloy-origins-60-rgb-usb-hyperx-red-switch-design-compacto-anti-ghosting-abnt2-preto-hkbo1s-rb-usg_1616771985_g.jpg",
+            "title": "Teclado Mecânico Gamer HyperX Alloy Origins 60%",
+            "value": 600000,
+            "description": "Teclado mecânico 60% compacto com estrutura em alumínio. Switches HyperX Red para alta durabilidade e performance. 100% anti-ghosting. Layout US. Iluminação RGB personalizável.",
+            "type": "periferico"
+        },
+        {
+            "id": "14",
+            "imageUrl": "https://s2-ge.glbimg.com/7J6ZkhIB4Yn-R3uR8KsbSIIXAuA=/0x0:5637x3760/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2023/h/s/MrRqfXSiWs598AxV000A/csgo-furia-iem-katowice-kscerato.jpg",
+            "title": "assinatura steam kscerato",
+            "value": 900000,
+            "description": "",
+            "type": "assinatura"
+        },
+        {
+            "id": "15",
+            "imageUrl": "https://img-cdn.hltv.org/gallerypicture/6K31cnSQ-6ifEBK45dmXkx.jpg?ixlib=java-2.1.0&w=1200&s=a0c872fbb5f6076b38f8034aef537a43",
+            "title": "assinatura steam Fallen",
+            "value": 900000,
+            "description": "",
+            "type": "assinatura"
+        },
+        {
+            "id": "16",
+            "imageUrl": "https://sm.ign.com/ign_br/screenshot/default/fotojet-2024-04-16t174451167_ds45.jpg",
+            "title": "assinatura steam Guerri",
+            "value": 900000,
+            "description": "",
+            "type": "assinatura"
+        },
+        {
+            "id": "17",
+            "imageUrl": "https://liquipedia.net/commons/images/thumb/7/78/Yuurih_%40_PGL_Major_Stockholm_2021.jpg/449px-Yuurih_%40_PGL_Major_Stockholm_2021.jpg",
+            "title": "assinatura steam Guerri",
+            "value": 900000,
+            "description": "",
+            "type": "assinatura"
+        }
+    ]
+}

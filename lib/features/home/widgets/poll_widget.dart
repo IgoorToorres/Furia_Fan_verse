@@ -12,6 +12,60 @@ class _PollWidgetState extends State<PollWidget> {
   bool hasVoted = false;
   String selectedPollOption = '1';
 
+  void _showPointsAnimation(BuildContext context) {
+    OverlayEntry overlayEntry = OverlayEntry(
+      builder: (context) {
+        return Positioned(
+          top: MediaQuery.of(context).size.height * 0.4,
+          left: MediaQuery.of(context).size.width * 0.2,
+          right: MediaQuery.of(context).size.width * 0.2,
+          child: Material(
+            color: Colors.transparent,
+            child: Center(
+              child: TweenAnimationBuilder<double>(
+                tween: Tween(begin: 0, end: -100),
+                duration: const Duration(seconds: 2),
+                builder: (context, value, child) {
+                  return Transform.translate(
+                    offset: Offset(0, value),
+                    child: Opacity(
+                      opacity: 1 - (value.abs() / 100),
+                      child: child,
+                    ),
+                  );
+                },
+                child: Row(
+                  mainAxisSize: MainAxisSize.min,
+                  children: [
+                    Image.asset(
+                      'assets/furia-coin.png',
+                      height: 50,
+                    ),
+                    SizedBox(width: 8),
+                    Text(
+                      '+10',
+                      style: TextStyle(
+                        fontSize: 24,
+                        fontWeight: FontWeight.bold,
+                        color: Color(0xFFFFD700), // dourado
+                      ),
+                    ),
+                  ],
+                ),
+              ),
+            ),
+          ),
+        );
+      },
+    );
+
+    Overlay.of(context).insert(overlayEntry);
+
+    Future.delayed(const Duration(seconds: 2), () {
+      overlayEntry.remove();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Padding(
@@ -24,7 +78,7 @@ class _PollWidgetState extends State<PollWidget> {
             BoxShadow(
               color: Colors.black.withOpacity(0.05),
               blurRadius: 8,
-              offset: Offset(0, 4),
+              offset: const Offset(0, 4),
             ),
           ],
         ),
@@ -42,7 +96,7 @@ class _PollWidgetState extends State<PollWidget> {
                     color: Colors.black,
                   ),
                 ),
-                votesTextStyle: TextStyle(
+                votesTextStyle: const TextStyle(
                   color: Colors.black,
                   fontSize: 14,
                   fontWeight: FontWeight.w500,
@@ -55,6 +109,9 @@ class _PollWidgetState extends State<PollWidget> {
                     hasVoted = true;
                     selectedPollOption = option.id!;
                   });
+
+                  _showPointsAnimation(context); // Mostra animação
+
                   return true;
                 },
                 votedProgressColor: Colors.greenAccent.shade400,
@@ -70,7 +127,8 @@ class _PollWidgetState extends State<PollWidget> {
                     id: '1',
                     title: const Text(
                       'Fallen',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.w600),
                     ),
                     votes: 67,
                   ),
@@ -78,7 +136,8 @@ class _PollWidgetState extends State<PollWidget> {
                     id: '2',
                     title: const Text(
                       'Yuurih',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.w600),
                     ),
                     votes: 22,
                   ),
@@ -86,7 +145,8 @@ class _PollWidgetState extends State<PollWidget> {
                     id: '3',
                     title: const Text(
                       'Yekindar',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.w600),
                     ),
                     votes: 34,
                   ),
@@ -94,7 +154,8 @@ class _PollWidgetState extends State<PollWidget> {
                     id: '4',
                     title: const Text(
                       'Kscerato',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.w600),
                     ),
                     votes: 67,
                   ),
@@ -102,7 +163,8 @@ class _PollWidgetState extends State<PollWidget> {
                     id: '5',
                     title: const Text(
                       'molodoy',
-                      style: TextStyle(color: Colors.white, fontWeight: FontWeight.w600),
+                      style: TextStyle(
+                          color: Colors.white, fontWeight: FontWeight.w600),
                     ),
                     votes: 34,
                   ),
@@ -112,9 +174,10 @@ class _PollWidgetState extends State<PollWidget> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Icon(Icons.how_to_vote, size: 16, color: Colors.black54),
+                  const Icon(Icons.how_to_vote,
+                      size: 16, color: Colors.black54),
                   const SizedBox(width: 6),
-                  Text(
+                  const Text(
                     '224 votos',
                     style: TextStyle(color: Colors.black54, fontSize: 12),
                   ),
