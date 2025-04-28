@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fuira_fan_verse/features/chatbot/chat_bot_screnn.dart';
 import 'package:fuira_fan_verse/shared/app_colors.dart';
 import 'package:fuira_fan_verse/shared/widgets/appbar_default.dart';
 import 'package:fuira_fan_verse/data/news_data.dart';
@@ -39,7 +40,7 @@ class HomeScreen extends StatelessWidget {
                       child: Column(
                         children: [
                           Text(
-                            'Tire suas duvidas\ncom o mascote da Furia!',
+                            'Tire suas dúvidas\ncom o mascote da Furia!',
                             style: TextStyle(
                               color: AppColors.textColor,
                               fontSize: 18,
@@ -47,11 +48,49 @@ class HomeScreen extends StatelessWidget {
                             ),
                             textAlign: TextAlign.center,
                           ),
-                          ClipRRect(
-                            borderRadius: BorderRadius.circular(50),
-                            child: Image.asset(
-                              'assets/furia-fc.png',
-                              height: 100,
+                          const SizedBox(height: 12),
+                          GestureDetector(
+                            onTap: () {
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ChatBotScrenn(),
+                                ),
+                              );
+                            },
+                            child: AnimatedScale(
+                              scale: 1.0,
+                              duration: const Duration(milliseconds: 200),
+                              child: Container(
+                                decoration: BoxDecoration(
+                                  shape: BoxShape.circle,
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.black26,
+                                      blurRadius: 10,
+                                      offset: Offset(0, 4),
+                                    ),
+                                  ],
+                                ),
+                                child: ClipRRect(
+                                  borderRadius: BorderRadius.circular(100),
+                                  child: Image.asset(
+                                    'assets/furia-fc.png',
+                                    height: 100,
+                                    width: 100,
+                                    fit: BoxFit.cover,
+                                  ),
+                                ),
+                              ),
+                            ),
+                          ),
+                          const SizedBox(height: 8),
+                          Text(
+                            'Fale agora!',
+                            style: TextStyle(
+                              color: Colors.grey.shade600,
+                              fontSize: 14,
+                              fontWeight: FontWeight.w500,
                             ),
                           ),
                         ],

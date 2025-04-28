@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fuira_fan_verse/core/models/news.dart';
 import 'package:fuira_fan_verse/features/news/news_detail_screen.dart';
-import 'package:fuira_fan_verse/shared/app_colors.dart';
 
 class NewsCard extends StatelessWidget {
   final News news;
@@ -13,74 +12,81 @@ class NewsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.symmetric(horizontal: 10),
+      padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 8),
       child: GestureDetector(
         onTap: () {
           Navigator.push(
             context,
             MaterialPageRoute(
-              builder: (context) => NewsDetailScreen(
-                news: news,
-              ),
+              builder: (context) => NewsDetailScreen(news: news),
             ),
           );
         },
         child: Card(
-          elevation: 4, // sombra leve
+          elevation: 3,
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(16),
           ),
-          color: AppColors.cardColor,
-          child: Column(
-            crossAxisAlignment: CrossAxisAlignment.start,
+          clipBehavior: Clip.antiAlias,
+          child: Stack(
             children: [
               Hero(
                 tag: news.id,
-                child: ClipRRect(
-                  borderRadius: const BorderRadius.only(
-                    topLeft: Radius.circular(16),
-                    topRight: Radius.circular(16),
-                  ),
-                  child: FadeInImage.assetNetwork(
-                    placeholder: 'assets/icone-furia.png',
-                    image: news.imageUrl,
-                    height: 200,
-                    width: double.infinity,
-                    fit: BoxFit.cover,
-                    imageErrorBuilder: (context, error, stackTrace) {
-                      return Image.asset(
-                        'assets/icone-furia.png',
-                        height: 200,
-                        width: double.infinity,
-                        fit: BoxFit.cover,
-                      );
-                    },
+                child: FadeInImage.assetNetwork(
+                  placeholder: 'assets/icone-furia.png',
+                  image: news.imageUrl,
+                  height: 220,
+                  width: double.infinity,
+                  fit: BoxFit.cover,
+                  imageErrorBuilder: (context, error, stackTrace) {
+                    return Image.asset(
+                      'assets/icone-furia.png',
+                      height: 220,
+                      width: double.infinity,
+                      fit: BoxFit.cover,
+                    );
+                  },
+                ),
+              ),
+              Container(
+                height: 220,
+                width: double.infinity,
+                decoration: BoxDecoration(
+                  gradient: LinearGradient(
+                    colors: [
+                      Colors.black.withOpacity(0.7),
+                      Colors.black.withOpacity(0.3),
+                    ],
+                    begin: Alignment.bottomCenter,
+                    end: Alignment.topCenter,
                   ),
                 ),
               ),
-              Padding(
-                padding: const EdgeInsets.all(16),
+              Positioned(
+                bottom: 16,
+                left: 16,
+                right: 16,
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
                     Text(
                       news.titleNews,
                       style: TextStyle(
-                        color: AppColors.textCardColor,
-                        fontSize: 20,
+                        color: Colors.white,
+                        fontSize: 18,
                         fontWeight: FontWeight.bold,
                       ),
                       maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),
-                    const SizedBox(height: 8),
+                    const SizedBox(height: 6),
                     Text(
                       news.description,
                       style: TextStyle(
-                        color: AppColors.textCardColor.withOpacity(0.8),
+                        color: Colors.white.withOpacity(0.85),
                         fontSize: 14,
                       ),
-                      maxLines: 3,
+                      maxLines: 2,
                       overflow: TextOverflow.ellipsis,
                     ),
                   ],
