@@ -32,7 +32,7 @@ class Shop {
       imageUrl: map['imageUrl'],
       title: map['title'],
       description: map['description'],
-      value: map['value'],
+      value: (map['value'] as num).toDouble(),
       type: map['type'],
     );
   }

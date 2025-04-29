@@ -1,14 +1,18 @@
 import 'package:flutter/material.dart';
+import 'package:fuira_fan_verse/data/shop_data.dart';
 import 'package:fuira_fan_verse/shared/app_colors.dart';
 import 'package:fuira_fan_verse/data/news_data.dart';
 import 'package:fuira_fan_verse/features/home/home_navigation.dart';
 import 'package:provider/provider.dart';
+import 'package:flutter_dotenv/flutter_dotenv.dart';
 
-void main() {
+void main() async{
+  await dotenv.load();
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (context) => NewsData())
+        ChangeNotifierProvider(create: (context) => NewsData()),
+        ChangeNotifierProvider(create: (context) => ShopData()),
       ],
       child: const MyApp(),
     ),

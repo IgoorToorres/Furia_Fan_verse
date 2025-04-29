@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:fuira_fan_verse/features/chatbot/chat_bot_screnn.dart';
 import 'package:fuira_fan_verse/shared/app_colors.dart';
 import 'package:fuira_fan_verse/shared/widgets/appbar_default.dart';
 import 'package:fuira_fan_verse/data/news_data.dart';
@@ -51,12 +50,7 @@ class HomeScreen extends StatelessWidget {
                           const SizedBox(height: 12),
                           GestureDetector(
                             onTap: () {
-                              Navigator.push(
-                                context,
-                                MaterialPageRoute(
-                                  builder: (context) => ChatBotScrenn(),
-                                ),
-                              );
+                              
                             },
                             child: AnimatedScale(
                               scale: 1.0,

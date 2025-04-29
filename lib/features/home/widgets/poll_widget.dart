@@ -76,7 +76,7 @@ class _PollWidgetState extends State<PollWidget> {
           borderRadius: BorderRadius.circular(20),
           boxShadow: [
             BoxShadow(
-              color: Colors.black.withOpacity(0.05),
+              color: Colors.black.withAlpha((0.05 * 255).toInt()),
               blurRadius: 8,
               offset: const Offset(0, 4),
             ),

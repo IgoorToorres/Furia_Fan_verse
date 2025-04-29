@@ -54,8 +54,8 @@ class NewsCard extends StatelessWidget {
                 decoration: BoxDecoration(
                   gradient: LinearGradient(
                     colors: [
-                      Colors.black.withOpacity(0.7),
-                      Colors.black.withOpacity(0.3),
+                      Colors.black.withAlpha((0.7 * 255).toInt()),
+                      Colors.black.withAlpha((0.3 * 255).toInt()),
                     ],
                     begin: Alignment.bottomCenter,
                     end: Alignment.topCenter,
@@ -83,7 +83,7 @@ class NewsCard extends StatelessWidget {
                     Text(
                       news.description,
                       style: TextStyle(
-                        color: Colors.white.withOpacity(0.85),
+                        color: Colors.white.withAlpha((0.8 * 255).toInt()),
                         fontSize: 14,
                       ),
                       maxLines: 2,
