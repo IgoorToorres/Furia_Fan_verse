@@ -6,7 +6,7 @@ import 'package:fuira_fan_verse/shared/widgets/appbar_default.dart';
 import 'package:fuira_fan_verse/data/news_data.dart';
 import 'package:fuira_fan_verse/features/home/widgets/news_card.dart';
 import 'package:fuira_fan_verse/features/home/widgets/partner_card.dart';
-import 'package:fuira_fan_verse/features/home/widgets/poll_widget.dart';
+import 'package:fuira_fan_verse/features/home/widgets/poll/poll_widget.dart';
 import 'package:fuira_fan_verse/shared/widgets/custom_drawer.dart';
 import 'package:provider/provider.dart';
 import 'package:fuira_fan_verse/core/models/partners.dart';

@@ -1,0 +1,19 @@
+name: social_share
+description: Flutter plugin for sharing content to Instagram story and more.
+version: 2.0.5
+homepage: https://github.com/sheikhsoft/social_share
+
+environment:
+  sdk: ">=2.12.0 <3.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  url_launcher: ^6.0.9
+
+flutter:
+  plugin:
+    platforms:
+      android:
+        package: com.shekarmudaliyar.social_share
+        pluginClass: SocialSharePlugin

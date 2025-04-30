@@ -1,5 +1,11 @@
+import 'dart:io';
+import 'dart:typed_data';
+import 'package:social_share/social_share.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_polls/flutter_polls.dart';
+import 'package:fuira_fan_verse/shared/app_colors.dart';
+import 'package:path_provider/path_provider.dart';
+import 'package:share_plus/share_plus.dart';
 
 class PollWidget extends StatefulWidget {
   const PollWidget({super.key});
@@ -11,6 +17,22 @@ class PollWidget extends StatefulWidget {
 class _PollWidgetState extends State<PollWidget> {
   bool hasVoted = false;
   String selectedPollOption = '1';
+
+  Future<void> shareToInstagramStory(Uint8List imageBytes) async {
+    final tempDir = await getTemporaryDirectory();
+    final file = File('${tempDir.path}/furia_story.png');
+    await file.writeAsBytes(imageBytes);
+
+    try {
+      await Share.shareXFiles(
+        [XFile(file.path)],
+        subject: 'Votei no FalleN!',
+        text: 'Votei no FalleN! #FURIA #Esports',
+      );
+    } catch (e) {
+      print("Erro ao compartilhar: $e");
+    }
+  }
 
   void _showPointsAnimation(BuildContext context) {
     OverlayEntry overlayEntry = OverlayEntry(
@@ -114,13 +136,13 @@ class _PollWidgetState extends State<PollWidget> {
 
                   return true;
                 },
-                votedProgressColor: Colors.greenAccent.shade400,
-                votedBackgroundColor: Colors.grey.shade400,
+                votedProgressColor: AppColors.lightBackgroundColor,
+                votedBackgroundColor: AppColors.cardColor,
                 votedPercentageTextStyle: const TextStyle(
-                  color: Colors.black,
+                  color: AppColors.textCardColor,
                   fontSize: 12,
                 ),
-                pollOptionsFillColor: Colors.black87,
+                pollOptionsFillColor: AppColors.cardColor,
                 pollOptionsBorder: Border.all(color: Colors.transparent),
                 pollOptions: [
                   PollOption(
@@ -183,6 +205,41 @@ class _PollWidgetState extends State<PollWidget> {
                   ),
                 ],
               ),
+              if (hasVoted) ...[
+                const SizedBox(height: 16),
+                ElevatedButton.icon(
+                  onPressed: () async {
+                    final ByteData imageData =
+                        await DefaultAssetBundle.of(context)
+                            .load('assets/logo-furia.png');
+                    final Uint8List bytes = imageData.buffer.asUint8List();
+
+                    final tempDir = await getTemporaryDirectory();
+                    final file = File('${tempDir.path}/story.png');
+                    await file.writeAsBytes(bytes);
+
+                    SocialShare.shareInstagramStory(
+                      file.path, // imagePath é posicional
+                      backgroundTopColor: "#000000",
+                      backgroundBottomColor: "#000000",
+                      attributionURL: "https://furia.gg",
+                    );
+                  },
+                  icon: const Icon(
+                    Icons.share,
+                    color: AppColors.textCardColor,
+                  ),
+                  label: const Text('Compartilhar nos Stories'),
+                  style: ElevatedButton.styleFrom(
+                    backgroundColor: AppColors.cardColor,
+                    foregroundColor: AppColors.textCardColor,
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 20, vertical: 12),
+                    shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(12)),
+                  ),
+                ),
+              ],
             ],
           ),
         ),
