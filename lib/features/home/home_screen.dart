@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:fuira_fan_verse/data/filter_data.dart';
+import 'package:fuira_fan_verse/features/chatbot/chat_bot_screen.dart';
 import 'package:fuira_fan_verse/shared/app_colors.dart';
 import 'package:fuira_fan_verse/shared/widgets/appbar_default.dart';
 import 'package:fuira_fan_verse/data/news_data.dart';
@@ -15,21 +17,21 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     final newsData = Provider.of<NewsData>(context);
+    final filterData = Provider.of<FilterData>(context);
     final List<String> partnersImages = Partners().getImages();
+
+    final filteredNews = newsData.listNews
+        .where((news) => filterData.isEnabled(news.game.toLowerCase()))
+        .toList();
+
     return Center(
       child: Scaffold(
         backgroundColor: AppColors.backgroundLight,
         drawer: CustomDrawer(),
         appBar: AppbarDefault(),
-        body: FutureBuilder(
-          future: newsData.getNews(),
-          builder: (context, snapshot) {
-            if (snapshot.connectionState == ConnectionState.waiting) {
-              return const Center(child: CircularProgressIndicator());
-            } else if (snapshot.hasError) {
-              return const Center(child: Text('erro ao carregar noticias'));
-            } else {
-              return SingleChildScrollView(
+        body: newsData.listNews.isEmpty
+            ? const Center(child: CircularProgressIndicator())
+            : SingleChildScrollView(
                 child: Column(
                   crossAxisAlignment: CrossAxisAlignment.center,
                   children: [
@@ -50,7 +52,12 @@ class HomeScreen extends StatelessWidget {
                           const SizedBox(height: 12),
                           GestureDetector(
                             onTap: () {
-                              
+                              Navigator.push(
+                                context,
+                                MaterialPageRoute(
+                                  builder: (context) => ChatBotScreen(),
+                                ),
+                              );
                             },
                             child: AnimatedScale(
                               scale: 1.0,
@@ -120,7 +127,7 @@ class HomeScreen extends StatelessWidget {
                       child: Padding(
                         padding: const EdgeInsets.only(top: 20, left: 20),
                         child: Text(
-                          'Noticias',
+                          'Notícias',
                           style: TextStyle(
                             color: AppColors.textColor,
                             fontSize: 20,
@@ -131,22 +138,24 @@ class HomeScreen extends StatelessWidget {
                     ),
                     Padding(
                       padding: const EdgeInsets.all(10.0),
-                      child: Column(
-                        spacing: 8,
-                        children: List.generate(
-                          10,
-                          (index) {
-                            return NewsCard(news: newsData.listNews[index]);
-                          },
-                        ),
-                      ),
+                      child: filteredNews.isEmpty
+                          ? const Padding(
+                              padding: EdgeInsets.all(16),
+                              child: Text(
+                                'Nenhuma notícia encontrada com os filtros atuais.',
+                                textAlign: TextAlign.center,
+                                style: TextStyle(fontSize: 16),
+                              ),
+                            )
+                          : Column(
+                              children: filteredNews
+                                  .map((news) => NewsCard(news: news))
+                                  .toList(),
+                            ),
                     ),
                   ],
                 ),
-              );
-            }
-          },
-        ),
+              ),
       ),
     );
   }

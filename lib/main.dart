@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:fuira_fan_verse/data/filter_data.dart';
 import 'package:fuira_fan_verse/data/shop_data.dart';
 import 'package:fuira_fan_verse/shared/app_colors.dart';
 import 'package:fuira_fan_verse/data/news_data.dart';
@@ -11,8 +12,9 @@ void main() async{
   runApp(
     MultiProvider(
       providers: [
-        ChangeNotifierProvider(create: (context) => NewsData()),
-        ChangeNotifierProvider(create: (context) => ShopData()),
+        ChangeNotifierProvider(create: (_) => NewsData()),
+        ChangeNotifierProvider(create: (_) => ShopData()),
+        ChangeNotifierProvider(create: (_) => FilterData()),
       ],
       child: const MyApp(),
     ),
