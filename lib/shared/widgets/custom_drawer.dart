@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fuira_fan_verse/features/filter/filter_screnn.dart';
+import 'package:fuira_fan_verse/features/user/user_or_login_screen.dart';
 import 'package:fuira_fan_verse/shared/app_colors.dart';
 
 class CustomDrawer extends StatelessWidget {
@@ -70,7 +71,14 @@ class CustomDrawer extends StatelessWidget {
                       style:
                           TextStyle(fontSize: 18, color: AppColors.textColor),
                     ),
-                    onTap: () {},
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) => UserOrLoginScreen(),
+                        ),
+                      );
+                    },
                   ),
                   Divider(),
                 ],
